@@ -1,16 +1,16 @@
 {
   "$schema": "https://github.com/grafana/grafana/raw/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
-  "name": "JSON API",
-  "id": "marcusolsson-json-datasource",
+  "name": "Ubibot",
+  "id": "jonpw-ubi-datasource",
   "metrics": true,
   "logs": true,
   "info": {
-    "description": "A data source plugin for loading JSON APIs into Grafana.",
+    "description": "A data source plugin for loading Ubibot platform data into Grafana.",
     "author": {
-      "name": "Marcus Olsson",
-      "email": "marcus.olsson@hey.com",
-      "url": "https://marcus.se.net"
+      "name": "Jon Williams",
+      "email": "x@x.com",
+      "url": "https://x"
     },
     "keywords": ["json", "api"],
     "logos": {

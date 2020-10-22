@@ -969,7 +969,7 @@
     rxjs "6.6.2"
     xss "1.0.6"
 
-"@grafana/data@7.2.1", "@grafana/data@latest":
+"@grafana/data@7.2.1", "@grafana/data@^7.0.0":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@grafana/data/-/data-7.2.1.tgz#a9f79f5a7d8909a9a6eaa0a67cf2b8774936768a"
   integrity sha512-A8Fx1yAwPigFc+57SLlvYVDL5Jq5t0MJtldJiRlOxsjm/gL8zAM63eB69Rm1TdrmhBUb+py7CEFxRKGKOc5jlQ==
@@ -1007,7 +1007,7 @@
   resolved "https://registry.yarnpkg.com/@grafana/eslint-config/-/eslint-config-2.0.0.tgz#6e2b03e6d9f2afe3a0afa68560184be4e47abcd8"
   integrity sha512-AktBgoo/WzaPgjITkemP/ItcAc5E7Ga0mgjflP/fUGsHnx+d4C2Lxxxpf9BjhNgqj3G82Db8tjXDFHEqWW19hQ==
 
-"@grafana/runtime@latest":
+"@grafana/runtime@^7.0.0":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@grafana/runtime/-/runtime-7.2.1.tgz#3b026092ee0f527c5c7bd9c3047fc84c69b5e01c"
   integrity sha512-DdlgFI7MDRBKOZBcqTGM0XXOQ3rT9E6t46ODMXoNCq9mZViPSCp7OLF2LTXpyfUl+1N7XknzSu+n93Nc9oLR9w==
@@ -1039,7 +1039,7 @@
     tiny-invariant "^1.0.1"
     tiny-warning "^0.0.3"
 
-"@grafana/toolkit@latest":
+"@grafana/toolkit@^7.0.0":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@grafana/toolkit/-/toolkit-7.2.1.tgz#87b72dfbeacd6d0409f518d1ae032e95b49c75e3"
   integrity sha512-WK8rvXAgtQkJJcGwqvtrbGEMUswIO3cE7JxFJN9Xrc3lawdtsW7YNJ1+FNOO+p37Bz49bY0KDVaclg49Flfaxg==
@@ -1133,7 +1133,7 @@
   resolved "https://registry.yarnpkg.com/@grafana/tsconfig/-/tsconfig-1.0.0-rc1.tgz#d07ea16755a50cae21000113f30546b61647a200"
   integrity sha512-nucKPGyzlSKYSiJk5RA8GzMdVWhdYNdF+Hh65AXxjD9PlY69JKr5wANj8bVdQboag6dgg0BFKqgKPyY+YtV4Iw==
 
-"@grafana/ui@7.2.1", "@grafana/ui@latest":
+"@grafana/ui@7.2.1", "@grafana/ui@^7.0.0":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@grafana/ui/-/ui-7.2.1.tgz#39ae8fa0af9992d0620872f0b5201ab856d6568d"
   integrity sha512-Abk09IAlghuZ+l86ozuOBV83FdxHGx5/PSxr9t9wGhZ+QozsnB7MAkpZ/Jhe47uKOUkPB8rgPYgA/4G4Eu7fuA==
@@ -5022,11 +5022,7 @@ espree@^7.1.0:
   dependencies:
     acorn "^7.4.0"
     acorn-jsx "^5.2.0"
-<<<<<<< HEAD
-    eslint-visitor-keys "^1.1.0"
-=======
     eslint-visitor-keys "^1.3.0"
->>>>>>> e26622f... Update dependencies
 
 esprima@^4.0.0, esprima@^4.0.1:
   version "4.0.1"
