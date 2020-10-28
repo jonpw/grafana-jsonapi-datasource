@@ -57,22 +57,18 @@ export const QueryEditor: React.FC<Props> = ({ onRunQuery, onChange, query }) =>
           }))}
           onChange={({ value }) => onChange({ ...query, cacheDurationSeconds: value! })}
         />
-        <InlineFormLabel
-          width={7}
-          className="query-keyword"
-          tooltip="Channel ID to query"
-        >
+        <InlineFormLabel width={7} className="query-keyword" tooltip="Channel ID to query">
           Channel ID
         </InlineFormLabel>
         <Segment
           value={{ label: formatChannelIDLabel(query.channelID), value: query.channelID }}
-          options={[0, 5, 10, 30, 60, 60 * 2, 60 * 5, 60 * 10, 60 * 30, 3600, 3600 * 2, 3600 * 5].map(value => ({
+          options={['20001', '20002', '20003'].map(value => ({
             label: formatChannelIDLabel(value),
             value,
             description: value ? '' : '',
           }))}
           onChange={({ value }) => onChange({ ...query, channelID: value! })}
-        />        
+        />
         <div className="gf-form gf-form--grow">
           <div className="gf-form-label gf-form-label--grow" />
         </div>
@@ -127,4 +123,10 @@ export const formatCacheTimeLabel = (s: number = defaultCacheDuration) => {
   }
 
   return s / 3600 + 'h';
+};
+
+const defaultChannelID = '20001';
+
+export const formatChannelIDLabel = (s: string = defaultChannelID) => {
+  return s;
 };

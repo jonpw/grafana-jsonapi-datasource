@@ -30,7 +30,7 @@ export const ConfigEditor: React.FC<Props> = ({ options, onOptionsChange }) => {
       {/* DataSourceHttpSettings handles most the settings for connecting over
       HTTP. */}
       <DataSourceHttpSettings
-        defaultUrl="http://localhost:8080"
+        defaultUrl="https://api.ubibot.com"
         dataSourceConfig={options}
         onChange={onOptionsChange}
       />

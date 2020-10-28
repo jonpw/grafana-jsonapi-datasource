@@ -8,6 +8,7 @@ interface JsonField {
 export interface JsonApiQuery extends DataQuery {
   fields: JsonField[];
   cacheDurationSeconds: number;
+  channelID: string;
 }
 
 export interface JsonApiVariableQuery extends DataQuery {
@@ -17,6 +18,7 @@ export interface JsonApiVariableQuery extends DataQuery {
 export const defaultQuery: Partial<JsonApiQuery> = {
   fields: [{ name: '', jsonPath: '' }],
   cacheDurationSeconds: 300,
+  channelID: '20001',
 };
 
 export interface JsonApiDataSourceOptions extends DataSourceJsonData {

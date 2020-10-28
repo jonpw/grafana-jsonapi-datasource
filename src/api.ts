@@ -49,7 +49,7 @@ export default class Api {
     const force = this.lastCacheDuration !== cacheDurationSeconds;
 
     if (force) {
-      this.cache.del(this.baseUrl);
+      this.cache.del(this.baseUrl+'\');
     }
 
     const cachedItem = this.cache.get(this.baseUrl);
